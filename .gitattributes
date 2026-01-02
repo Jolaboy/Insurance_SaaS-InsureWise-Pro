@@ -1,0 +1,19 @@
+# Normalize line endings across OSes
+# Store text files as LF in the repo; let Git convert as needed on checkout.
+* text=auto eol=lf
+
+# Shell scripts should always be LF
+*.sh text eol=lf
+
+# Windows scripts can be CRLF in working tree
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Images/binaries
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg text eol=lf
+*.pdf binary
