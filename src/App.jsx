@@ -6,12 +6,14 @@ import Overview from './pages/Overview'
 import Policies from './pages/Policies'
 import PolicyDetail from './pages/PolicyDetail'
 import Quotes from './pages/Quotes'
+import ResetPassword from './pages/ResetPassword'
 import Settings from './pages/Settings'
 
 export default function App() {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
+      <Route path="/reset-password" element={<ResetPassword />} />
 
       <Route element={<ProtectedRoute />}>
         <Route path="/dashboard" element={<DashboardLayout />}>
